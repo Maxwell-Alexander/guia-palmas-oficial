@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo-2.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Guia Palmas</title>
+    <style>
+        /*GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*PAGINA*/
+body{
+    background-color: rgb(206, 237, 245);
+    margin: 0;
+    padding: 0;
+}
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px 200px;
+}
+
+/*CONTEÚDO*/
+hr{
+    margin: 70px;
+    width: 100%;
+}
+.box h3{
+    padding: 25px 250px 25px 150px;
+    font-size: 20px;
+}
+.box h2{
+    padding: 25px 150px;
+    font-size: 30px;
+    text-decoration: none;
+}
+.box h3{
+    padding: 25px 250px 25px 150px;
+    font-size: 20px;
+}
+.box p{
+    padding: 25px 150px 25px 150px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;    
+}
+.txt{
+    margin-left: 400px;
+}
+.txt h3{
+    text-align: center;
+}
+#hotel{
+    width: 600px;
+    padding: 50px;
+    text-align: justify;
+    display: inline-block;
+}
+#txtInfo{
+    display: block;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 3px;
+    border: none;
+    height: 40px;
+    width: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(78, 131, 231);
+}
+#butEnviar{
+    background-color: rgb(78, 131, 231);
+    display: block;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 15px;
+    border-radius: 3px;
+    border: none;
+    height: 40px;
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+
+}
+#hotel img{
+    float: left;
+    padding-right: 20px;
+}
+#hotel h3{
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+/*SOBRE*/
+.box-5{
+    /*width: 100%;*/
+    height: 300px;
+}
+.box-5 h2{
+    margin: 0 0 20px 0;
+}
+.box-5 h3{
+    padding: 15px 0 15px 0;
+}
+.box-5 table{
+    padding: 50px;
+}
+th{
+    background-color:rgb(78, 131, 231);
+    color: whitesmoke;
+    padding: 15px;
+
+}
+td{
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 10px;
+}
+
+/*RODAPÉ*/
+#rodape-pagina{
+    background-color: rgb(7, 16, 41);
+    width: 100%;
+    height: 70px;
+    
+}
+#rodape-pagina ul{
+    display: inline;
+}
+#rodape-pagina ul li{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgba(245, 245, 245, 0.63);
+    margin: 20px;
+    padding: 5px;
+}
+#rod2{
+    float: right;
+}
+
+/*RESPOSIVIDADE DO SITE*/
+@media(max-width: 1280px){
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(206, 237, 245);
+        margin: 0;
+    }
+    .logo{
+        position: absolute;
+        margin-top: 1px;
+    }
+    .menu{
+        background-color: rgb(78, 131, 231);
+        width: 300px;
+        height: 100%;
+        box-shadow: 1px 0 3px rgb(78, 131, 231);
+        float: left;
+        position: fixed;    
+    }
+    .menu nav{
+        margin: 0px 0px;        
+    }
+    .menu ul{
+        margin: 0;
+        list-style: none;
+    }
+    .menu ul li{
+        margin: 0;
+        padding: 0;
+    }
+    .menu ul li a{
+        display: block;
+        padding: 25px;
+        color: rgb(206, 237, 245);
+        text-decoration: none;font-family: Arial, Helvetica, sans-serif;
+        transition: .5s;
+    }
+    .menu ul li a:hover{
+        color:rgb(78, 131, 231);
+        background-color: rgb(206, 237, 245);
+        border-left: 5px solid rgb(57, 78, 170);
+        font-weight: bold;
+    }
+    .menu ul input{
+        margin: 450px 40px 0px 0px;
+        padding: 0px;
+        border-radius: 3px;
+        border: none;
+        height: 40px;
+        width: 200px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(78, 131, 231);
+        
+    }
+    #txtBuscar{
+        padding: 0 20px;
+    }
+    ::placeholder{
+        color:rgba(0, 0, 0, 0.404);
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    .conteudo{
+        float: right;
+        width: calc(100% - 110px); 
+    }
+    #banner{
+        float: right;
+        width:calc(100% - 300px);
+    }
+    #banner h1{
+        float: right;
+        position: absolute;
+        margin-top: auto;
+        margin: 10px;
+        /*margin: 400px 550px;*/
+        /*padding: 0 45% 0 45%;*/
+        font-family: Arial, Helvetica, sans-serif;
+        color: whitesmoke;
+        font-size: 30px;
+        text-shadow: black 2px 2px;
+    }
+    .box p{
+        width: 500px;
+        padding: 50px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <section class="box">
+        <h2>Pontos turisticos</h2>
+        <p>
+            Esta é um a lista dos pontos mais bonitos e visitados de Palmas, se você deseja visitar a cidade eles são paradas obrigatorias se quiser desfrutar ao máximo.
+        </p>
+
+        <div class="box-2">
+            <img src="img/praia-prata-2.png" alt="Praia do Prata">
+            <div class="txt">
+                <h3>Praia do Prata</h3>
+                <p>
+                    Praia que recebe turistas e visitantes desde julho de 2003, é a mais frequentada da cidade,
+                    principalmente nos finais de semana, e está localizada a nove quilômetros da Praça dos
+                    Girassóis.
+                </p>
+            </div>
+        </div>
+        <div class="box-2">
+            <img src="img/praia-da-graciosa-2.png" alt="Praia da Graciosa">
+            <div class="txt">
+                <h3>Praia da Graciosa</h3>
+                <p>
+                    Praia Graciosa que é muito utilizada para realizar eventos culturais, de lazer, esportivos e
+                    náuticos. A praia dispõe de uma extensa orla dotada de boa estrutura como banheiros, quadras
+                    de esportes, parques infantis, área de camping, posto policial, marina com atracadouro, além
+                    da oferta serviços de bares e restaurantes.
+                </p>
+            </div>
+        </div>
+        <div class="box-2">
+            <img src="img/ilha-canela-2.png" alt="Ilha do Canela">
+            <div class="txt">
+                <h3>Ilha do Canela</h3>
+                <p>
+                    Localizada no centro do Lago de Palmas, a Ilha Canela, cartão postal da capital, formou-se
+                    em virtude do alagamento do rio Tocantins, na ocasião da construção da hidrelétrica Luiz
+                    Eduardo Magalhães. O pedaço de terra 45 mil metros quadrados parece um oásis no meio da
+                    cidade. Barraquinhas, palhoças na água, um pôr do sol incrível e aquela paz.
+                </p>
+            </div>
+        </div>
+        <div class="box-2">
+            <img src="img/cachoeira-do-roncador-palmas-2.png" alt="Cachoeira do Roncador">
+            <div class="txt">
+                <h3>Cachoeira do Roncador</h3>
+                <p>
+                    Com 70 metros de altura, a queda forma um pequeno lago de água fria e revigorante. A
+                    Cachoeira da Roncadeira juntamente com a Cachoeira do Escorrega Macaco recebem cerca de 400
+                    visitantes por dia em alta temporada. Elas ficam em uma propriedade privada, que se encontra
+                    dentro de uma APA, por isso a visitação é controlada e é cobrada entrada.
+                </p>
+            </div>
+        </div>
+        <div class="box-2">
+            <img src="img/praia-da-graciosa-2.png" alt="Praça dos Girassóis">
+            <div class="txt">
+                <h3>Praça dos Girassóis</h3>
+                <p>
+                    Com 571 mil metros quadrados, a Praça dos Girassóis é a maior da América latina e a segunda
+                    maior praça urbana do mundo, sendo superada apenas pela Praça Merdeka, que fica em Jacarta,
+                    na Indonésia. Começou a ser construída em 18 de outubro de 1999 e contou com 800 operários
+                    trabalhando para erguer o cartão postal da capital Palmas.
+                </p>
+            </div>
+        </div>
+        <div class="box-2">
+            <img src="img/parque-cesamar-2.png" alt="Parque Cesamar">
+            <div class="txt">
+                <h3>Parque Cesamar</h3>
+                <p>
+                    Criado em 1998, o Parque Cesamar proporciona à população de Palmas um espaço de convívio
+                    para a melhoria da qualidade de vida. Possui pista para caminhadas, equipamentos para a
+                    prática esportiva e espaços de diversão para crianças e adultos. Ainda no parque fica a Casa
+                    Suçuapara, que foi sede da primeira Prefeitura e Câmara Municipal de Palmas.
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
